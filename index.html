@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Hbutterfly</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css" />
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160628216-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-160628216-1');
+    </script>
+    
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://demo.xpeedstudio.com/html/beautypress/css/font-awesome.min.css">
+    <style>
+        .black-text {
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="uk-container">
+        <nav class="uk-background-default uk-hidden@m" uk-navbar id="min_nav">
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="#" style="min-height: 60px">
+                            <h1 class="uk-margin-remove-bottom" style="font-size: 50px"><img src="assets/images/hButterfly-logo-2.jpg" style="height: 100px"></h1>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="uk-navbar-right">
+                <a class="uk-navbar-toggle"></a>
+                <a class="uk-navbar-toggle uk-button" href="#offcanvas-slide" uk-toggle>
+                    <span uk-navbar-toggle-icon></span>
+                    <span class="uk-margin-small-left">Menu</span>
+                </a>
+                <div id="offcanvas-slide" uk-offcanvas class="uk-hidden@m">
+                    <div class="uk-offcanvas-bar">
+                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+                        <ul class="uk-nav uk-nav-default">
+                            <li>
+                                <a href="index.html"><span class="uk-button-text">Home</span></a>
+                            </li>
+                            <li>
+                                <a href="services.html"><span class="uk-padding-small-bottom">Expertise</span></a>
+                            </li>
+                            <li>
+                                <a href="event-design.html"><span class="uk-padding-small-bottom">Event Design</span></a>
+                            </li>
+
+                            <li>
+                                <a href="blog.html"><span class="uk-padding-small-bottom">Blog</span></a>
+                            </li>
+                            <li>
+                                <a href="collaboration.html"><span class="uk-padding-small-bottom">Collaboration</span></a>
+                            </li>
+                            <li>
+                                <a href="kaleidoscope.html"><span class="uk-padding-small-bottom">Kaleidoscope</span></a>
+                            </li>
+                            <li>
+                                <a href="my-story.html"><span class="uk-padding-small-bottom">My story</span></a>
+                            </li>
+                            <li>
+                                <a href="workshop.html"><span class="uk-padding-small-bottom">Workshop</span></a>
+                            </li>
+                            <li>
+                                <a href="success-stories.html"><span class="uk-padding-small-bottom">Success Stories</span></a>
+                            </li>
+                            <li>
+                                <a href="all-things-tranding.html"><span class="uk-padding-small-bottom">Treding</span></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="uk-visible@m">
+            <nav uk-navbar style="margin-top: 20px">
+                <div class="uk-navbar-center">
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a href="#" style="min-height: 60px">
+                                <h1 class="uk-margin-remove-bottom" style="font-size: 50px"><img src="assets/images/hButterfly-logo-2.jpg" style="height: 100px"></h1>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav uk-navbar>
+                <div class="uk-navbar-center">
+                    <ul class="uk-navbar-nav black-text">
+                        <li>
+                            <a href="index.html"><span class="uk-button-text">Home</span></a>
+                        </li>
+                        <li>
+                            <a href="services.html"><span class="uk-padding-small-bottom">Expertise</span></a>
+                        </li>
+                        <li>
+                            <a href="branding.html"><span class="uk-padding-small-bottom">Branding</span></a>
+                        </li>
+                        <li>
+                            <a href="event-design.html"><span class="uk-padding-small-bottom">Event Design</span></a>
+                        </li>
+
+                        <li>
+                            <a href="blog.html"><span class="uk-padding-small-bottom">Blog</span></a>
+                        </li>
+                        <li>
+                            <a href="kaleidoscope.html"><span class="uk-padding-small-bottom">Kaleidoscope</span></a>
+                        </li>
+                        <li>
+                            <a href="my-story.html"><span class="uk-padding-small-bottom">My story</span></a>
+                        </li>
+                        <li>
+                            <a href="workshop.html"><span class="uk-padding-small-bottom">Workshop</span></a>
+                        </li>
+                        <li>
+                            <a href="success-stories.html"><span class="uk-padding-small-bottom">Success Stories</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Trending</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="all-things-trending.html"> All Things Trending</a></li>
+                                    <li><a href="the-hbutterfly-ted-talks.html">Ted Talks</a></li>
+                                    <li><a href="fashion-label-the-hbutterfly.html">Fashion Label </a></li>
+                                    <li><a href="monsoon-clips.html">Monsoon Clips</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </nav>
+
+    </header>
+
+    <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider="autoplay: true">
+        <ul class="uk-slider-items uk-child-width-1-1">
+            <li style="max-height: 550px">
+                <img src="assets/images/pink-spring-flowers.jpg" alt="">
+                <div class="uk-position-center uk-panel">
+                    <div class="uk-text-center" uk-grid>
+                        <div class="uk-width">
+                            <div class="beautypress-welcome-wraper">
+                                <div class="uk-padding@m"></div>
+                                <h2 class="color-purple" style="font-size: 60px">The HButterfly</h2>
+
+                                <p class="color-pink">An ultimate solution to live confidently, beautifully and happily.</p>
+                                <h2 class="color-pink">"We are all butterflies. Earth is our chrysalis."</h2>
+                                <div class="beautypress-btn-wraper">
+                                    <a href="services.html" class="xs-btn bg-color-pink round-btn box-shadow-btn">Read more <span style="top: 55.5px; left: 85.3594px;"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small arrow" href="#" uk-slider-item="previous">&larr;</a>
+        <a class="uk-position-center-right uk-position-small arrow" href="#" uk-slider-item="next">&rarr;</a>
+
+    </div>
+
+    <section class="beautypress-about-section section-padding uk-section">
+        <div class="uk-container">
+            <div class="uk-grid-match uk-grid-large" uk-grid>
+                <div class="uk-width-1-2@l uk-width-1-1@m uk-flex uk-flex-middle">
+                    <div class="beautypress-new-about-text-gruop">
+                        <div class="beautypress-sub-heading beautypress-watermark-title">
+                            <h2 class="color-pink uk-heading-small">Why "TheHButterfly"?
+                            </h2>
+                            <span class="beautypress-gradient-separetor"></span>
+                        </div>
+                        <!-- .beautypress-sub-heading END -->
+                        <span class="beautypress-gradient-separetor"></span>
+                        <p>Those curious creative hours dreaming of a transformation could not help but turn to butterfly to seek vivid inspiration. What better name than something so relatable to inspirational transformation, bright captivating colours
+                            and nothing but an overall dreamy mesmerizing aura than TheHButterfly that comes across as the perfect blend of the Name Initial (H) of the Creator and the Butterfly.
+
+                        </p>
+                        <p>
+                            A butterfly is a dynamic creature to invoke when you are in the quest of a support system while undergoing the phase of transition. Whether it is a relationship, at work, or when you are on an emotional patchwork journey, a butterfly can prove to be your
+                            greatest ally during intense phases of personal transformation. It is meant to ease the entire process of transformation by becoming your beacon. The multiple traits possessed by a butterfly can assist humans to achieve more
+                            success within their own lives. Humans cannot fly but they can ensure not getting stuck in their comfort zones.
+
+
+                        </p>
+                        <p class="color-pink uk-text-bold">
+                            The world of the Soul and "The HButterfly"
+                        </p>
+                        <p>
+                            In many civilizations around the world, this creature symbolizes the soul world or the soul. For instance, in Chinese culture, it represents conjugal bliss and joy. In Ancient Greece civilization, a butterfly represents the soul or psyche. To Native Americans,
+                            it symbolizes colour, joy and change.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="uk-width-1-2@l uk-width-1-1@m">
+                    <div class="beautypress-new-about-img-wraper">
+                        <div uk-grid="masonry: true">
+                            <div class="uk-width-1-2">
+                                <div>
+                                    <img class="border-radius" src="../hButterfly/assets/images/styling.jpg">
+                                </div>
+                            </div>
+                            <div class="uk-width-1-2">
+                                <div>
+                                    <img class="border-radius" src="../hButterfly/assets/images/consultant.jpg">
+                                </div>
+                            </div>
+                            <div class="uk-width-1-2">
+                                <div>
+                                    <img class="border-radius" src="../hButterfly/assets/images/consultant2.jpg">
+                                </div>
+                            </div>
+                            <div class="uk-width-1-2">
+                                <div>
+                                    <img class="border-radius" src="../hButterfly/assets/images/consultant4.jpg">
+                                </div>
+                            </div>
+
+                            <div class="uk-width-1-2">
+                                <div>
+                                    <img class="border-radius" src="../hButterfly/assets/images/styling1.jpg">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-section bg-twice">
+        <div class="uk-container">
+            <div class="uk-grid-large uk-flex uk-flex-middle" uk-grid>
+                <div class="uk-width-1-2@m">
+                    <img class="lesson-margin" src="../hButterfly/assets/images/lady.jpeg">
+                </div>
+                <div class="uk-width-1-2@m">
+                    <div class="beautypress-sub-heading beautypress-watermark-title">
+                        <h2 class="color-pink uk-heading-small">The Lesson</h2>
+                        <span class="beautypress-gradient-separetor"></span>
+                    </div>
+                    <p>
+                        The lesson that this exotic creature can teach us is to let go off the old behaviour patterns by breaking free from the 'Cocoon'.<strong> TheHButterfly </strong>will enlighten you that transformation does not have to be traumatic.
+                        It can take place as smoothly and as blissfully as one wishes.
+                    </p>
+                    <p>'One step at a time' is another important lessons that humans may learn from the butterfly as this beautiful creature knows to do a little at a time that goes on to become great with time.</p>
+                    <p>
+                        'Change Is Inevitable' is yet another powerful lesson that humans may learn from the butterfly. The moment one tries to resist the natural flow of life, one begins to encounter problems on varied levels.
+                    </p>
+                    <p>
+                        Humans are constantly engaged in giving birth to activities, ideas and qualities. They all need to be formed, developed, shaped and honed. At times, we also require retreating in our lives to mend flaws only to emerge as better.
+                    </p>
+
+
+
+
+                    <p class="para">Unlock the power of <b>"TheHButterfly"</b> that aims to become the most trustworthy and powerful ally in your transformative journey..</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-section uk-container">
+        <div class="beautypress-sub-heading beautypress-watermark-title uk-text-center">
+            <h2 class="color-pink uk-heading-small">Why Choose Us ?</h2>
+            <span class="beautypress-gradient-separetor separetor-center"></span>
+        </div>
+        <div class="uk-margin uk-flex uk-flex-middle" uk-grid>
+            <div class="uk-width-1-2@m">
+                <div class="uk-text-lead uk-text-bold color-purple" style="line-height: 40px">TheHButterfly: An ultimate solution to live confidently, beautifully and happily.</div>
+                <p><b>"TheHButterfly"</b> has seen incredible traction in the relevant industry since launch and has been growing organically while captivating the attention of ideal fans on relevant platforms. Now available all across the globe, be attentive
+                    as this new-fangled concept goes on to evolve and expand across more countries.</p>
+                <p> We help people that are dealing with a range of issues causing tremendous emotional stress and anxiety encompassing specific body types, face cut flaws, dusky skin complexion, small height and not so impressive dressing style.
+                </p>
+                <p>We constantly do witness countless emotional stress and embarrassment and hence decided to come up with a customized solution in the form of <b>"TheHButterfly"</b></p>
+            </div>
+            <div class="uk-width-1-2@m">
+                <img src="../hButterfly/assets/images/confident.jpg">
+            </div>
+            <div class="uk-width-1-2@m">
+                <img src="../hButterfly/assets/images/fashion.jpg">
+            </div>
+            <div class="uk-width-1-2@m">
+                <div class="uk-text-lead uk-text-bold color-purple" style="line-height: 40px">Crafted For The Love of Makeovers, Fashion & Styling</div>
+                <p>We want to impart people with remarkably imaginative efficient yet cost-effective solutions for personality transformation.</p>
+                <p> We accomplish this by optimizing our decade-plus relevant expertise and experience. We accomplish this by acknowledging the customized preferences and needs of our clients. We accomplish this by delivering products and services that work,
+                    are accessible and pleasant to experience and utilize till eternity.</p>
+                <p>To an image architect, individuality and creative visualization are key inspiration points. They beckon ingenious ideas deep in an image architect's mind. The novel ideas are alluring and thrilling. When resourceful expertise is blended
+                    with zeal of developing a unique style statement out of a persona, the result is <span class="uk-text-bold">TheHButterfly</span>, a brand that specializes in customized makeover aimed at bringing the best out of one's persona by limiting
+                    flaws to the minimum. </p>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="uk-section uk-background-cover uk-flex" uk-parallax="bgy: -200" style="background-image: url('assets/images/main-banner.jpg');">
+            <!-- <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">Get i Touch </h1> -->
+            <div class="uk-container uk-margin-auto uk-margin-auto-vertical">
+                <div class="beautypress-sub-heading beautypress-watermark-title uk-text-center">
+                    <h2 class="color-pink uk-heading-small">Get in Touch with Us.</h2>
+                    <span class="beautypress-gradient-separetor separetor-center"></span>
+                </div>
+                <div class="uk-margin-medium-top" uk-grid>
+                    <div class="uk-width-1-2@m">
+                        <div class="beautypress-booking-text-wraper">
+                            <div class="beautypress-booking-content-text beautypress-border beautypress-version-3">
+                                <div class="beautypress-booking-text">
+                                    <h2 class="color-purple">Time Schedule</h2>
+                                    <div class="beautypress-icon-bg-text">
+                                        <p> By Appointments Only! Schedule An Appointment ( Online & Offline). Explore services and avail an expert's advice by checking out our 'Expertise'.</p>
+                                    </div>
+                                    <!-- .beautypress-icon-bg-text END -->
+                                    <ul>
+                                        <li>Mon - Sun </li>
+                                        <li>12:00pm - 06:00pm</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="uk-section uk-container">
+		<div class="beautypress-sub-heading beautypress-watermark-title uk-text-center">
+			<h2 class="color-pink uk-heading-small">My Photo Gallery</h2>
+			<span class="beautypress-gradient-separetor separetor-center"></span>
+		</div>
+		<div class="uk-margin">
+			<div class="uk-margin-medium-top">
+			    <ul class="uk-flex-center" uk-tab>
+				    <li><a href="#">Image Makeover</a></li>
+				    <li><a href="#">Fashion Styling</a></li>
+				    <li><a href="#">Consulting Sessions</a></li>
+				</ul>
+				<ul class="uk-switcher uk-margin">
+				    <li>
+				    	<div uk-grid="masonry: true">
+				    		<div class="uk-width-1-3">
+				    			<img src="../hButterfly/assets/images/makeover1.jpg">
+				    		</div>
+				    		<div class="uk-width-1-3">
+				    			<img src="https://demo.xpeedstudio.com/html/beautypress/img/gallery-3.jpg">
+				    		</div>
+				    		<div class="uk-width-1-3">
+				    			<img src="https://demo.xpeedstudio.com/html/beautypress/img/gallery-2.jpg">
+				    		</div>
+				    		<div class="uk-width-1-3">
+				    			<img src="https://demo.xpeedstudio.com/html/beautypress/img/gallery-2.jpg">
+				    		</div>
+				    		<div class="uk-width-1-3">
+				    			<img src="https://demo.xpeedstudio.com/html/beautypress/img/service-tab-img-1.jpg">
+				    		</div>
+				    		<div class="uk-width-1-3">
+				    			<img src="https://demo.xpeedstudio.com/html/beautypress/img/gallery-3.jpg">
+				    		</div>
+				    	</div>
+				    </li>
+				    <li>Hello again!</li>
+				    <li>Bazinga!</li>
+				</ul>
+			</div>
+		</div>
+	</section> -->
+
+    <section class="beautypress-icon-bg">
+        <div class="uk-section uk-container">
+            <section class="uk-container">
+                <div class="beautypress-sub-heading beautypress-watermark-title uk-text-center">
+                    <h2 class="color-pink uk-heading-small">What "The HButterfly" Does?</h2>
+                    <span class="beautypress-gradient-separetor separetor-center"></span>
+                </div>
+                <div class="uk-margin" uk-grid>
+
+                    <div class="uk-width-1-5@l uk-width-1-2">
+                        <div class="box uk-padding-small box-1">
+                            <h2 class="uk-text-center">Image <br> Makeovers</h2>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-5@l uk-width-1-2">
+                        <div class="box uk-padding-small box-2">
+                            <h2 class="uk-text-center">Fashion <br> Styling & Choreography </h2>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-5@l uk-width-1-2">
+                        <div class="box uk-padding-small box-1">
+                            <h2 class="uk-text-center">Collaboration </h2>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-5@l uk-width-1-2">
+                        <div class="box uk-padding-small box-2">
+                            <h2 class="uk-text-center">Wardrobe Management</h2>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-5@l uk-width-1-2">
+                        <div class="box uk-padding-small box-1">
+                            <h2 class="uk-text-center">Creative Shopping</h2>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-1-5@l uk-width-1-2">
+                        <div class="box uk-padding-small box-2">
+                            <h2 class="uk-text-center">Consulting Sessions (online & offline)</h2>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-5@l uk-width-1-2">
+                        <div class="box uk-padding-small box-1">
+                            <h2 class="uk-text-center">Events & Branding</h2>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-5@l uk-width-1-2">
+                        <div class="box uk-padding-small box-2">
+                            <h2 class="uk-text-center">Exceed <br>Expectations</h2>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-5@l uk-width-1-2">
+                        <div class="box uk-padding-small box-1">
+                            <h2 class="uk-text-center">Creative Conceptualization</h2>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-5@l uk-width-1-2">
+                        <div class="box uk-padding-small box-2">
+                            <h2 class="uk-text-center">Value Relationships</h2>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+        </div>
+    </section>
+    <section class="beautypress-icon-bg">
+        <div class="uk-section uk-container">
+            <section class="uk-container">
+                <div class="beautypress-sub-heading beautypress-watermark-title uk-text-center">
+                    <h2 class="color-pink uk-heading-small">What "The HButterfly" Doesn't Do?</h2>
+                    <span class="beautypress-gradient-separetor separetor-center"></span>
+                </div>
+                <div class="uk-margin" uk-grid>
+
+                    <div class="uk-width-1-5@l uk-width-1-2">
+                        <div class="box uk-padding-small box-1">
+                            <h2 class="uk-text-center">Sacrifice Quality<br> For Profit</h2>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-5@l uk-width-1-2">
+                        <div class="box uk-padding-small box-2">
+                            <h2 class="uk-text-center">Work For<br> Free </h2>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-5@l uk-width-1-2">
+                        <div class="box uk-padding-small box-1">
+                            <h2 class="uk-text-center">Settle For <br> Ordinary</h2>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-5@l uk-width-1-2">
+                        <div class="box uk-padding-small box-2">
+                            <h2 class="uk-text-center">Partnership</h2>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-5@l uk-width-1-2">
+                        <div class="box uk-padding-small box-1">
+                            <h2 class="uk-text-center">Take Non-intresting Projects</h2>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-1-5@l uk-width-1-2">
+                        <div class="box uk-padding-small box-2">
+                            <h2 class="uk-text-center">Unrealistic<br> Deadlines</h2>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-5@l uk-width-1-2">
+                        <div class="box uk-padding-small box-1">
+                            <h2 class="uk-text-center">Outsourcing</h2>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-5@l uk-width-1-2">
+                        <div class="box uk-padding-small box-2">
+                            <h2 class="uk-text-center">False Commitments</h2>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-5@l uk-width-1-2">
+                        <div class="box uk-padding-small box-1">
+                            <h2 class="uk-text-center">Work With Non-intresting People</h2>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-5@l uk-width-1-2">
+                        <div class="box uk-padding-small box-2">
+                            <h2 class="uk-text-center">Work Without <br>Holiday Breaks</h2>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="meta-footer uk-text-center">
+            <div class="uk-container uk-section">
+                <div class="textwidget">
+                    <h2 class="color-pink uk-heading-small">The HButterfly</h2>
+                    <h4 style="font-size: 30px">Follow Us!</h4>
+                    <div>
+                        <a href="https://in.pinterest.com/Elegance_TheGrace/" class="uk-icon-link uk-margin-small-right" uk-icon="pinterest"></a>
+                        <a href="https://mobile.twitter.com/home" class="uk-icon-link uk-margin-small-right" uk-icon="twitter"></a>
+                        <a href="https://www.instagram.com/" class="uk-icon-link" uk-icon="instagram"></a>
+                    </div>
+                    <div class="color-pink uk-margin-medium-top  uk-text-bold" uk-grid>
+                        <div class="uk-width-1-3@s">
+                            <span uk-icon="receiver" class="uk-margin-small-right"></span>Phone Number: +91 991 001 6428
+                        </div>
+                        <div class="uk-width-1-3@s">
+                            <span uk-icon="instagram" class="uk-margin-small-right"></span>Instagram: <a href="https://www.instagram.com/thehbutterfly?r=nametag" class="color-pink" target="_blank">TheHButterfly</a>
+                        </div>
+                        <div class="uk-width-1-3@s">
+                            <span uk-icon="mail" class="uk-margin-small-right"></span>Email: <a href="mailto:contact@thehbutterfly.com" class="color-pink">contact@thehbutterfly.com</a>
+                        </div>
+                    </div>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div style="background-color:black;color:#fff">
+            <p class="uk-text-center">&copy; Copyright 2021 Thehbutterfly.com. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

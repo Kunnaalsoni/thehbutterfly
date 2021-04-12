@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The hbutterfly</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://demo.xpeedstudio.com/html/beautypress/css/font-awesome.min.css">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160628216-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-160628216-1');
+    </script>
+    <style type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Lato);
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-size: 16px;
+            font-family: 'Lato', sans-serif;
+        }
+        
+        .black-text {
+            color: black;
+            font-weight: bold;
+        }
+        
+        .timeline {
+            /*color: #fff;*/
+        }
+        
+        .timeline h1,
+        .timeline ul li .content h2 {
+            text-shadow: 1px 1px 1px rgba(56, 56, 56, 0.5);
+        }
+        
+        .timeline h1 {
+            background: #3d9e67;
+            padding: 70px 0;
+            font-size: 2.5em;
+            text-align: center;
+        }
+        
+        .timeline ul {
+            /*background: #faf8eb;*/
+            padding: 50px 0;
+        }
+        
+        .timeline ul li {
+            background: #ea7baf;
+            position: relative;
+            margin: 0 auto;
+            width: 5px;
+            padding-bottom: 40px;
+            list-style-type: none;
+        }
+        
+        .timeline ul li:last-child {
+            padding-bottom: 7px;
+        }
+        
+        .timeline ul li:before {
+            content: '';
+            background: #faf8eb;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            border: 3px solid #ea7baf;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+        
+        .timeline ul li .hidden {
+            opacity: 0;
+        }
+        
+        .timeline ul li .content {
+            background: #ea7baf;
+            position: relative;
+            top: 7px;
+            width: 450px;
+            padding: 20px;
+        }
+        
+        .timeline ul li .content h2 {
+            /*color: #fff;*/
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        
+        .timeline ul li .content p {
+            text-align: center;
+        }
+        
+        .timeline ul li .content:before {
+            content: '';
+            background: #ea7baf;
+            position: absolute;
+            top: 0px;
+            width: 38px;
+            height: 5px;
+        }
+        
+        .timeline ul li:nth-child(odd) .content {
+            left: 50px;
+            background: #ea7baf;
+            background: -webkit-linear-gradient(-45deg, #56BC83, #ea7baf);
+            background: linear-gradient(-45deg, #56BC83, #ea7baf);
+        }
+        
+        .timeline ul li:nth-child(odd) .content:before {
+            left: -38px;
+        }
+        
+        .timeline ul li:nth-child(even) .content {
+            left: calc(-450px - 45px);
+            background: #ea7baf;
+            background: -webkit-linear-gradient(45deg, #56BC83, #ea7baf);
+            background: linear-gradient(45deg, #56BC83, #ea7baf);
+        }
+        
+        .timeline ul li:nth-child(even) .content:before {
+            right: -38px;
+        }
+        /* -------------------------
+   ----- Media Queries ----- 
+   ------------------------- */
+        
+        @media screen and (max-width: 1020px) {
+            .timeline ul li .content {
+                width: 41vw;
+            }
+            .timeline ul li:nth-child(even) .content {
+                left: calc(-41vw - 45px);
+            }
+        }
+        
+        @media screen and (max-width: 700px) {
+            .timeline ul li {
+                margin-left: 20px;
+            }
+            .timeline ul li .content {
+                width: calc(100vw - 100px);
+            }
+            .timeline ul li .content h2 {
+                text-align: initial;
+            }
+            .timeline ul li:nth-child(even) .content {
+                left: 45px;
+                background: #ea7baf;
+                background: -webkit-linear-gradient(-45deg, #56BC83, #ea7baf);
+                background: linear-gradient(-45deg, #56BC83, #ea7baf);
+            }
+            .timeline ul li:nth-child(even) .content:before {
+                left: -33px;
+            }
+        }
+        
+        .timeline ul li:nth-child(odd) .content {
+            background: url(https://i.pinimg.com/originals/c1/96/c3/c196c322e5b9744c711d5500a9d18de8.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            /*box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.1)*/
+        }
+        
+        .timeline ul li:nth-child(even) .content {
+            background: url(https://i.pinimg.com/originals/c1/96/c3/c196c322e5b9744c711d5500a9d18de8.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            /*box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.1)	*/
+        }
+    </style>
+</head>
+
+<body>
+    <header class="uk-container">
+        <nav uk-navbar style="margin-top: 20px">
+            <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="#" style="min-height: 60px">
+                            <h1 class="uk-margin-remove-bottom" style="font-size: 50px"><img src="assets/images/hButterfly-logo-2.jpg" style="height: 100px"></h1>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav uk-navbar>
+            <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav black-text">
+                    <li>
+                        <a href="index.html"><span class="uk-padding-small-bottom">Home</span></a
+              >
+            </li>
+            <li>
+              <a href="services.html"
+                ><span class="uk-padding-small-bottom">Expertise</span></a
+              >
+            </li>
+            <li>
+              <a href="branding.html"><span class="uk-padding-small-bottom">Branding</span></a>
+                    </li>
+                    <li>
+                        <a href="event-design.html"><span class="uk-padding-small-bottom">Event Design</span></a>
+                    </li>
+                    <li>
+                        <a href="blog.html"><span class="uk-padding-small-bottom">Blog</span></a
+              >
+            </li>
+            <li>
+              <a href="kaleidoscope.html"
+                ><span class="uk-padding-small-bottom">Kaleidoscope</span></a
+              >
+            </li>
+            <li>
+              <a href="my-story.html"
+                ><span class="uk-button-text">My story</span></a
+              >
+            </li>
+            <li>
+              <a href="workshop.html"
+                ><span class="uk-padding-small-bottom">Workshop</span></a
+              >
+            </li>
+            <li>
+              <a href="success-stories.html"
+                ><span class="uk-padding-small-bottom">Success Stories</span></a
+              >
+            </li>
+              <li>
+                <a href="#">Trending</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="all-things-trending.html"> All Things Trending</a></li>
+                                <li><a href="the-hbutterfly-ted-talks.html">Ted Talks</a></li>
+                                <li><a href="fashion-label-the-hbutterfly.html">Fashion Label </a></li>
+                                <li><a href="monsoon-clips.html">Monsoon Clips</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <!-- <div class="uk-background-cover uk-flex" uk-parallax="bgy: -200" style="background-image: url('https://cdn.pixabay.com/photo/2014/12/30/17/59/background-584223_960_720.jpg');height: 550px">
+
+	    <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" style="font-size: 70px; ">My Story: Story of The HButterfly</h1>
+
+	</div> -->
+    <div class="uk-background-cover uk-flex" uk-parallax="bgy: -200" style="background-image: url(https://d39l2hkdp2esp1.cloudfront.net/img/photo/166227/166227_00_2x.jpg);
+	    height: 500px;
+	    background-repeat: no-repeat;
+	    background-position-y: calc(-92.7px);">
+
+        <h1 class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical" style="font-size: 70px; ">My Story</h1>
+
+    </div>
+    <section class="timeline">
+        <ul>
+            <li>
+                <div class="content">
+                    <h2>
+                        <time style="font-size: 40px;">Part 1: The Dreamer</time>
+                    </h2>
+                    <p>In the beginning, there was enthusiasm, manifested as pencil sketches of a human figure dressed in vivid clothing patterns and colours, in school text copies. From very early in my childhood, I knew exactly what I wanted to pursue
+                        in my life. This zeal, however, was not altogether random. </p>
+                    <!-- This is a button toggling the modal with the default close button -->
+                    <div class="uk-text-center">
+                        <button class="uk-button uk-button-default uk-text-center uk-margin-small-right" type="button" uk-toggle="target: #modal-close-default">Know More</button></div>
+
+                    <!-- This is the modal with the default close button -->
+                    <div id="modal-close-default" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body uk-text-center">
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                            <h2 class="uk-modal-title">Part 1: The Dreamer</h2>
+                            <p>In the beginning, there was enthusiasm, manifested as pencil sketches of a human figure dressed in vivid clothing patterns and colours, in school text copies. From very early in my childhood, I knew exactly what I wanted to
+                                pursue in my life. This zeal, however, was not altogether random. My maternal grandmother and mother had been fantastic dress designer who would not only conceptualize the pattern and design of outfit but were also brilliant
+                                in sewing. Undeniably, the desire to create original apparel designs to nail a unique look, and the remarkable potential to do it with imagination and precision, was simply embedded in me.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content hidden" style="opacity: 1;">
+                    <h2>
+                        <time style="font-size: 40px;">Part 2: The Achiever </time>
+                    </h2>
+                    <p>Growing older brought more clarity. By the time my graduation was coming to a close, I was all set to embrace the metro city culture to experience a hassle-free fashion-designing course. The time flew by and I earned a certificate
+                        in fashion designing and in no time, accessed brilliant fashion intern opportunities. </p>
+                    <div class="uk-text-center">
+                        <button class="uk-button uk-button-default uk-text-center uk-margin-small-right" type="button" uk-toggle="target: #modal-close-default-2">Know More</button></div>
+
+                    <!-- This is the modal with the default close button -->
+                    <div id="modal-close-default-2" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body uk-text-center">
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                            <h2 class="uk-modal-title">Part 2: The Achiever
+                            </h2>
+                            <p>Growing older brought more clarity. By the time my graduation was coming to a close, I was all set to embrace the metro city culture to experience a hassle-free fashion-designing course. The time flew by and I earned a certificate
+                                in fashion designing and in no time, accessed brilliant fashion intern opportunities.
+                                <p> Someday modelling photoshoot, someday theatre costume designing and someday sourcing fabrics from different markets, every single day was new learning even when I made a switch to explore a corporate culture. My first corporate
+                                    stint as a sponsorship assistant in one of the top multinational conference organizer firm, allowed me to expand my portfolio while continuing my distance-learning PGDBA program in management and finance from a reputed
+                                    university. </p>
+
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </li>
+            <li>
+                <div class="content hidden" style="opacity: 1;">
+                    <h2>
+                        <time style="font-size: 40px;">Part 3: The Struggler</time>
+                        </h3>
+                        <p>My promising corporate career ended the day when my parents decided to get me married at the right age. Shortly thereafter, one combined wrong decision-making led to a series of destructive chain reactions. It was during the same
+                            phase, I took up writing to support myself financially and emotionally. </p>
+                        <div class="uk-text-center">
+                            <button class="uk-button uk-button-default uk-text-center uk-margin-small-right" type="button" uk-toggle="target: #modal-close-default-3">Know More</button></div>
+
+                        <!-- This is the modal with the default close button -->
+                        <div id="modal-close-default-3" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body uk-text-center">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Part 3: The Struggler
+
+                                </h2>
+                                <p>My promising corporate career ended the day when my parents decided to get me married at the right age. Shortly thereafter, one combined wrong decision-making led to a series of destructive chain reactions.
+                                    <p>It was during the same phase, I took up writing to support myself financially and emotionally. My tears found the way towards blogosphere from where I found the best support system, quite unexpectedly in the form of
+                                        blog friends. </p>Gradually, I began craving for a nomadic life, meant to explore spirituality and hence decided to explore Vrindavan that eventually turned out to be the best decision of my life.
+                                    <p>After a few months, I crossed path with my soul-mate who eventually went on to become my life-partner. However, our 'happily-after story' was no exception to its unique share of ups and downs. The struggles finally
+                                        ended on a positive note as my life partner supported me to clear UGC-net exam in (Management Stream).</p>
+                                </p>
+                            </div>
+                        </div>
+                </div>
+                </div>
+                </div>
+            </li>
+            <li>
+                <div class="content hidden" style="opacity: 1;">
+                    <h2>
+                        <time style="font-size: 40px;">Part 4: The Learner</time>
+                    </h2>
+                    <p>While planning my career, I would often indulge in day-dreaming about making an impact on as many lives as I could. I had already tried many different fields, but I was still away from tapping my fullest potential. So I prayed to God
+                        to make me discover a desired field and that's how I stumbled upon a fascinating concept of 'Image Consulting'. </p>
+                    <div class="uk-text-center">
+                        <button class="uk-button uk-button-default uk-text-center uk-margin-small-right" type="button" uk-toggle="target: #modal-close-default-4">Know More</button></div>
+
+                    <!-- This is the modal with the default close button -->
+                    <div id="modal-close-default-4" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body uk-text-center">
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                            <h2 class="uk-modal-title"> Part IV- The Learner
+
+                            </h2>
+                            <p>While planning my career, I would often indulge in day-dreaming about making an impact on as many lives as I could. I had already tried many different fields, but I was still away from tapping my fullest potential. So I prayed
+                                to God to make me discover a desired field and that's how I stumbled upon a fascinating concept of 'Image Consulting'.
+                                <p> Without wasting time, I invested in an online course offered by a European academy and since then there has been no looking back. Educational institutes, one after another, began inviting me to conduct a workshop on image
+                                    consultancy, fashion styling and many more customized relevant topics. Today, my image consulting clientele portfolio comprises of Political leaders, Social activists, Models, Singers, Artists, Entrepreneurs, Students,
+                                    Business persons, and the list is quite exhaustive. My confidence and expertise finally channelized me towards brainstorming about a notion of entrepreneurship.
+
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </li>
+            <li>
+                <div class="content hidden" style="opacity: 1;">
+                    <h2>
+                        <time style="font-size: 40px;">Part 5: The Experimenter</time>
+                    </h2>
+                    Challenging Metro city life compelled me to pursue my intuition to move back to my cultural roots. Owing to the proximity to the country capital, the state capital of Rajasthan i.e. Jaipur, naturally became my first and the only preferred choice to embark
+                    on my entrepreneurial journey. Browsing Instagram and stumbling upon the contest of 'Mrs India Capital 2019-20' was perhaps no coincidence as earlier I believed. </p>
+                    <div class="uk-text-center">
+                        <button class="uk-button uk-button-default uk-text-center uk-margin-small-right" type="button" uk-toggle="target: #modal-close-default-5">Know More</button></div>
+
+                    <!-- This is the modal with the default close button -->
+                    <div id="modal-close-default-5" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body uk-text-center">
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                            <h2 class="uk-modal-title"> Part V- The Experimenter
+
+                            </h2>
+                            <p>Challenging Metro city life compelled me to pursue my intuition to move back to my cultural roots. Owing to the proximity to the country capital, the state capital of Rajasthan i.e. Jaipur, naturally became my first and the
+                                only preferred choice to embark on my entrepreneurial journey. Browsing Instagram and stumbling upon the contest of 'Mrs India Capital 2019-20' was perhaps no coincidence as earlier I believed.
+                                <p> I pursued my intuition and after two weeks, I was there at the venue finding myself in absolute awe out of the sheer diversity of the women in terms of culture, language, dressing sense, body shape, height, confidence,
+                                    occupation and last but not least 'DREAMS'.</p> After treasuring pleasant memories, one fine day I woke up to my brand new identity as 'Mrs India Capital Finalist'. Nevertheless, I decided to let go off the dream of
+                                winning 'shining crown' since the roadmap ahead did not align with my career choice. </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+
+                </div>
+            </li>
+            <li>
+                <div class="content hidden" style="opacity: 1;">
+                    <h2>
+                        <time style="font-size: 40px;">Part 6: The Dreamcatcher</time>
+                    </h2>
+                    <p>One morning in November 2019, not only did born the clear vision of 'TheHButterfly' in a much more streamlined manner but was also born 'DREAMCATCHER'. An idea of organizing a never-before event, meant to celebrate 'INCLUSIVITY IN
+                        ALL ASPECTS'. There was neither a clear roadmap nor deliberation, only a vision to celebrate life while cherishing the present moment. </p>
+                    <div class="uk-text-center">
+                        <button class="uk-button uk-button-default uk-text-center uk-margin-small-right" type="button" uk-toggle="target: #modal-close-default-6">Know More</button></div>
+
+                    <!-- This is the modal with the default close button -->
+                    <div id="modal-close-default-6" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body uk-text-center">
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                            <h2 class="uk-modal-title"> Part VI- The Dreamcatcher
+
+                            </h2>
+                            <p>One morning in November 2019, not only did born the clear vision of 'TheHButterfly' in a much more streamlined manner but was also born 'DREAMCATCHER'. An idea of organizing a never-before event, meant to celebrate 'INCLUSIVITY
+                                IN ALL ASPECTS'.</p> There was neither a clear roadmap nor deliberation, only a vision to celebrate life while cherishing the present moment. A circle-shaped Dreamcatcher symbolizes the circle of life besides representing
+                            the constant travel of the moon and sun in a circle shape. Inspired by the 'spider' that does represent wisdom and learning, Dreamcatcher not merely captures the nightmares but dispose them off.
+                            <p>Legends believed that the air has both, pleasant dreams and nightmares. So when the nightmares get trapped by the centre net of the dreamcatcher, the pleasant dreams climb by hanging feathers that act like ladders, to ultimately
+                                descend to the sleeping children. Perhaps, I was destined to be a dreamcatcher.
+                                <p/> The nightmares, no matter come in what form, right from low self-esteem, stage fear, low-confidence due to personality, body shaming and many more, the dreamcatcher can trap them to further make way for the pleasant dreams
+                                in the form of lasting happiness to those who allow it to be a part of their lives.
+                                <p> The day you decide to be a part of the intriguing, magical and profound world of dreamcatchers, you will perceive the world through new eyes. To know more about 'Dreamcatcher World of Events', please send us an email as
+                                    we would love to hear from you.</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+
+                </div>
+            </li>
+            <li>
+                <div class="content hidden" style="opacity: 1;">
+                    <h2>
+                        <time style="font-size: 40px;">Part 7: Ode To Gratitude</time>
+                    </h2>
+                    <p>In 2019, as I embark on my entrepreneurial journey, I look back at my journey from being a dreamer to a dreamcatcher that certainly has traversed through challenging paths filled with incredible learning, knowledge, wisdom, spirituality,
+                        creativity and not to forget, humanity. </p>
+                    <div class="uk-text-center">
+                        <button class="uk-button uk-button-default uk-text-center uk-margin-small-right" type="button" uk-toggle="target: #modal-close-default-7">Know More</button></div>
+
+                    <!-- This is the modal with the default close button -->
+                    <div id="modal-close-default-7" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body uk-text-center">
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                            <h2 class="uk-modal-title"> Part VII - Ode To Gratitude
+
+                            </h2>
+                            <p>In 2019, as I embark on my entrepreneurial journey, I look back at my journey from being a dreamer to a dreamcatcher that certainly has traversed through challenging paths filled with incredible learning, knowledge, wisdom,
+                                spirituality, creativity and not to forget, humanity. I believe everyone can look good and I am determined to make that happen through my expertise. To be a trailblazer, you need not resist change but to embrace it. Last
+                                but not least, my story is incomplete without expressing my heartfelt gratitude to every single individual who at some point of time supported me to a great extent and encouraged me to pursue my dreams.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <div class="meta-footer uk-text-center">
+            <div class="uk-container uk-section">
+                <div class="textwidget">
+                    <h2 class="color-pink uk-heading-small">The HButterfly</h2>
+                    <h4 style="font-size: 40px">Follow Us!</h4>
+                    <div>
+                        <a href="https://in.pinterest.com/Elegance_TheGrace/" class="uk-icon-link uk-margin-small-right" uk-icon="pinterest"></a>
+                        <a href="https://mobile.twitter.com/home" class="uk-icon-link uk-margin-small-right" uk-icon="twitter"></a>
+                        <a href="https://www.instagram.com/" class="uk-icon-link" uk-icon="instagram"></a>
+                    </div>
+                    <div class="color-pink uk-margin-medium-top  uk-text-bold" uk-grid>
+                        <div class="uk-width-1-3@s">
+                            <span uk-icon="receiver" class="uk-margin-small-right"></span>Phone Number: +91 991 001 6428
+                        </div>
+                        <div class="uk-width-1-3@s">
+                            <span uk-icon="instagram" class="uk-margin-small-right"></span>Instagram: <a href="https://www.instagram.com/thehbutterfly?r=nametag" class="color-pink" target="_blank">TheHButterfly</a>
+                        </div>
+                        <div class="uk-width-1-3@s">
+                            <span uk-icon="mail" class="uk-margin-small-right"></span>Email: <a href="mailto:contact@thehbutterfly.com" class="color-pink">contact@thehbutterfly.com</a>
+                        </div>
+                    </div>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div style="background-color:black;color:#fff">
+            <p class="uk-text-center">&copy; Copyright 2021 Thehbutterfly.com. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
